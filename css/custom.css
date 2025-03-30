@@ -111,7 +111,7 @@ ul.disc{
   display: none;
   position: absolute;
   text-align: center;
-  background-color: #f1f1f1;
+  margin-left: -45px;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -121,13 +121,13 @@ ul.disc{
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color: black;
+  color: #78e4ff;
   text-decoration: none;
   display: block;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {color: rgb(245, 255, 57)}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
