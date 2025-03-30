@@ -1,6 +1,7 @@
 
+// Phrog Pond by Katherine Xu (Spring 2025)
 
-class kxPhrogs { // Custom class
+class kxPhrogs {
 
     // phrog body and flower color
     c;
@@ -17,7 +18,7 @@ class kxPhrogs { // Custom class
 
     txt;
 
-    constructor (lc, lc2, llx, lly, lrot, lsc) { // Use of constructor and new commands
+    constructor (lc, lc2, llx, lly, lrot, lsc) { 
         this.c = lc;
         this.c2 = lc2;
         this.lx = llx;
@@ -31,9 +32,9 @@ class kxPhrogs { // Custom class
         this.txt = " ";
     }
 
-    kxcamelliaphrog() { // Phroggies from Ex.3
+    kxcamelliaphrog() { 
 
-        push();  // push()
+        push(); 
         translate(this.lx,this.ly);
         rotate(radians(this.rot));
         scale(this.sc);
@@ -61,7 +62,7 @@ class kxPhrogs { // Custom class
         textSize(20);
         text(this.txt,10,-20);
       
-        pop();   // pop()
+        pop();
     }
 
     kxlilyphrog() { 

@@ -1,5 +1,5 @@
 
-// Comments are added next to the first code that completes checklist requirement
+// Michaelsoft Paint by Katherine Xu (Spring 2025)
 
 // ------- vars and assets
 let currentkey = '1';
@@ -195,7 +195,7 @@ function keyPressed() {
 // ------------------------ Unique Brushes
 
 function kxRainbrush(lx, ly) {
-  colorMode(HSB);   // colorMode()
+  colorMode(HSB); 
 
   stroke((5*frameCount) % 360, 100, 100);
   
@@ -204,7 +204,7 @@ function kxRainbrush(lx, ly) {
 
 }
 
-function kxCloudBrush(lx, ly) { // Custom Function #1
+function kxCloudBrush(lx, ly) {
   let rancolor = color(random(256,256,256), random(100,256,100), random(100,256,100));  // Color Object
   let r = random(20);
   colorMode(RGB)
@@ -221,7 +221,7 @@ function kxCloudBrush(lx, ly) { // Custom Function #1
   }
 } 
 
-function kxCatBrush(k, lx, ly) { // Custom Function #2
+function kxCatBrush(k, lx, ly) {
   colorMode(RGB)
   let rancolor2 = color(random(256,256,256), random(100,256,100));
 
@@ -229,7 +229,7 @@ function kxCatBrush(k, lx, ly) { // Custom Function #2
   image(cat,lx,ly,random(1,20) + 50,random(1,20) + 50);
 }
 
-function kxStarBrush(kcount, lx, ly,) { // Custom Function #3
+function kxStarBrush(kcount, lx, ly,) { 
   colorMode(RGB)
   let rancolor3 = color(random(256,256,256), random(100,256,0), random(256,256,100));
   
@@ -241,7 +241,7 @@ function kxStarBrush(kcount, lx, ly,) { // Custom Function #3
 
 // ------------------------------------- Eraser and Canvas Options
 
-function eraser(k, lx, ly, px, py) { // Erase
+function eraser(k, lx, ly, px, py) {
   strokeWeight(25);
   stroke(k);
   line(lx, ly, px, py);

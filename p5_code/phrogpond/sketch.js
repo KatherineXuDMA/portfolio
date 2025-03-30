@@ -1,5 +1,5 @@
 
-// Comments are added next to the first code that completes specific checklist requirement
+// Phrog Pond by Katherine Xu (Spring 2025)
 
 let phrogs;
 
@@ -14,7 +14,7 @@ function setup() {
 
 
   // Spawns randomized phroggies!
-  for (let i = 0; i < phrogs.length; i++) {   // Use of {} and length property
+  for (let i = 0; i < phrogs.length; i++) { 
     phrogs[i] = new kxPhrogs(color(random(255),random(255),random(255)), color(random(255),random(255),random(255)),250,250,0,random(.3,1));
 
   }
@@ -29,7 +29,7 @@ function draw() {
   // Helps distribute camellia and lily phrogs.
   for (let i = 0; i < phrogs.length; i++) {
     if ( i % 2 == 0 ) {
-      phrogs[i].kxcamelliaphrog();   // Use of []
+      phrogs[i].kxcamelliaphrog(); 
     } else {
       phrogs[i].kxlilyphrog();
     }
